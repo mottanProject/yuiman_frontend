@@ -1,0 +1,355 @@
+/*html {*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*}*/
+
+/*body {*/
+/*    height: 80%;*/
+/*    width: 100%;*/
+/*}*/
+
+/*#root {*/
+/*    height: 100%;*/
+/*}*/
+
+/*.test {*/
+/*    height: 100%;*/
+/*}*/
+
+/*--------------*/
+/*共通*/
+/*--------------*/
+
+body {
+    background-color: #FFFFFF;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 14px;
+}
+
+.parent {
+    position: absolute;
+    width:90%;
+    height:90%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+span.bg-required{
+    color: #FF6E6E;
+}
+
+/*ボタン*/
+button{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #FFFFFF;
+    background-color: #B7DCFF;
+}
+
+button:hover{
+    background-color: #55ADFF;
+}
+
+/*テキストボックス*/
+input {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    height: 36px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0px 0px 4px 0px #ccc inset;
+    text-indent: 1em;
+}
+
+input:focus{
+    outline: solid 1px #B7DCFF;
+}
+
+/*エラーメッセージ*/
+p.errmsg {
+    width: 300px;
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color:#FF6E6E ;
+}
+
+/*--------------*/
+/*login画面*/
+/*--------------*/
+
+.login {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    min-width: 400px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.25));
+    text-align: center;
+}
+
+.login label {
+    display: block;
+}
+
+/*ハイパーリンク*/
+.login a {
+    margin: 10px;
+    text-decoration: none;
+    color: #55ADFF;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #55ADFF;
+}
+
+a:hover {
+    color: #55ADFF;
+}
+
+a:focus {
+    color: #55ADFF;
+}
+
+/*ログイン画面ロゴ画像*/
+.login img.title{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/*ログイン画面タイトル*/
+.login h1{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/*ログインボタン*/
+.login button.loginbtn{
+    width: 300px;
+}
+
+/*OAuth認証ボタン*/
+.login button.oauthbtn{
+    width: 300px;
+    color: #B7DCFF;
+    border: 3px solid #B7DCFF;
+    background-color: #FFFFFF;
+}
+
+.login button.oauthbtn:hover{
+    color: #55ADFF;
+    border-color: #55ADFF;
+}
+
+.login button.oauthbtn img{
+    width: 20px;
+    height: auto;
+    margin-right: 15px;
+    vertical-align: -5px;
+}
+
+/*ログイン画面用テキストボックス*/
+.login input.logininput{
+    width: 60%;
+}
+
+/*--------------*/
+/*新規登録画面*/
+/*--------------*/
+
+.createaccount {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    min-width: 400px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.25));
+    text-align: center;
+}
+
+/*新規登録画面ロゴ画像*/
+.createaccount img.title{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+/*新規登録画面プロフィール画像*/
+.createaccount img.upimg{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*新規登録画面グリッド*/
+.crecon {
+    display: grid; /* グリッドレイアウト */
+    grid-template-columns: 200px 1fr;
+    column-gap: 15px;
+    row-gap: 5px;
+    text-align: center;
+    align-items: center;
+}
+.crecon label{
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+.crecon label.form-tip{
+    grid-column: 2 / 3;
+    text-align: left;
+    font-size: 12px;
+}
+
+.crecon input{
+    grid-column: 2 / 3;
+    text-align: left;
+}
+
+.createaccount p.notice {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+/*新規登録画面タイトル*/
+.createaccount h1{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/*新規登録画面用テキストボックス*/
+.crecon input.createinput{
+    width: 80%;
+    max-width: 300px;
+    margin: 5px;
+}
+
+/*--------------*/
+/*新規登録確認画面*/
+/*--------------*/
+.createaccountconf {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    min-width: 400px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.25));
+    text-align: center;
+}
+
+/*新規登録画面ロゴ画像*/
+.createaccountconf img.title{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+/*新規登録画面タイトル*/
+.createaccountconf h1{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/*新規登録画面プロフィール画像*/
+.createaccountconf img.upimg{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/*新規登録確認画面グリッド*/
+.cofcon {
+    display: grid; /* グリッドレイアウト */
+    grid-template-columns: 200px 1fr;
+    column-gap: 15px;
+    row-gap: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.cofcon label{
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+.cofcon label.form-tip{
+    grid-column: 2 / 3;
+    text-align: left;
+    font-size: 12px;
+}
+
+p.text-confirm{
+    grid-column: 2 / 3;
+    margin: 10px;
+    text-align: left;
+}
+
+/*--------------*/
+/*新規登録確認画面*/
+/*--------------*/
+.createaccountcomp {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    min-width: 400px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.25));
+    text-align: center;
+}
+
+/*新規登録確認画面ロゴ画像*/
+.createaccountcomp img.title{
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+/*新規登録確認画面タイトル*/
+.createaccountcomp h1{
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+/*新規登録確認画面ようこそラベル*/
+.createaccountcomp p.welcome{
+    font-size: 20px;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+/*新規登録確認画面完了ラベル*/
+.createaccountcomp p.complete{
+    margin-top: 50px;
+}
+
+/*新規登録確認画面お知らせラベル*/
+.createaccountcomp p.notice{
+    margin-bottom: 100px;
+}
+
